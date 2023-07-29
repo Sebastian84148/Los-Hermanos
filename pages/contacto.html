@@ -4,46 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scss/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <header class="header">
-        <a class="link-logo" href="../index.html">
-            <img class="logo" src="../img/Logo.png" alt="Logo">
-        </a>
-        <nav>
-            <ul class="menu">
-                <li><a class="link" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link" href="./servicios.html">Servicios</a></li>
-                <li><a class="link" href="./productos.html">Productos</a></li>
-                <li><a class="link" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/Logo.png" class="logo" alt="Logo">
+              </a>
+              <button class="text-bg-warning p-2 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="div collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="link nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link nav-link" href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link nav-link" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main class="main">
-        <section class="section1">
+    <main class="con-main">
+        <section class="con-section1">
             <h1>Contacto</h1>
-            <i class="icons bi-whatsapp"></i>
-            <p class="parrafo1">Numero de Whatsapp</p>
-            <i class="icons bi-telephone"></i>
-            <p class="parrafo1">Numero de Telefono</p>
-            <i class="icons bi-geo-alt"></i>
-            <p class="parrafo1">Ubicacion</p>
-            <i class="icons bi-clock"></i>
-            <p class="parrafo1">Horario</p>
+            <i class="bi-whatsapp"></i>
+            <p>Numero de Whatsapp</p>
+            <i class="bi-telephone"></i>
+            <p>Numero de Telefono</p>
+            <i class="bi-geo-alt"></i>
+            <p>Ubicacion</p>
+            <i class="bi-clock"></i>
+            <p>Horario</p>
         </section>
-        <section class="section2">
+        <section class="con-section2">
             <h1>Consulta</h1>
             <form>
                 <div>
-                    <input class="form form1" type="text" placeholder="Nombre" required>
+                    <input class="form1" type="text" placeholder="Nombre" required>
                 </div>
                 <div>
-                    <input class="form form1" type="email" placeholder="Email" required>
+                    <input class="form1" type="email" placeholder="Email" required>
                 </div>
                 <div>
-                    <select class="form form1">
+                    <select class="form1">
                         <option value="Electroventiladores">Electroventiladores</option>
                         <option value="Levanta Cristales">Levanta Cristales</option>
                         <option value="Calefactores y Repuestos">Calefactores y Repuestos</option>
@@ -51,26 +67,25 @@
                     </select>
                 </div>
                 <div>
-                    <textarea class="form form1 textarea" placeholder="Mensaje" required></textarea>
+                    <textarea class="form1 textarea" placeholder="Mensaje" required></textarea>
                 </div>
-                <input class="form form2" type="submit" value="Enviar">
-                <input class="form form2" type="reset" value="Restablecer">
+                <input class="form2" type="submit" value="Enviar">
+                <input class="form2" type="reset" value="Restablecer">
             </form>
         </section>
     </main>
     <footer class="footer">
         <div>
-            <img class="logo-abajo" src="../img/Logo.png" alt="Logo">
+            <img class="logo-footer" src="../img/Logo.png" alt="Logo">
         </div>
-        <div>
-            <ul class="menu-abajo">
-                <li><a class="link" href="../index.html">Inicio</a></li>
-                <li><a class="link" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link" href="./servicios.html">Servicios</a></li>
-                <li><a class="link" href="./productos.html">Productos</a></li>
-                <li><a class="link" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </div>
+        <ul class="menu-footer">
+          <li class="list-item"><a class="link" href="../index.html">Inicio</a></li>
+          <li class="list-item"><a class="link" href="./nosotros.html">Nosotros</a></li>
+          <li class="list-item"><a class="link" href="./servicios.html">Servicios</a></li>
+          <li class="list-item"><a class="link" href="./productos.html">Productos</a></li>
+          <li class="list-item"><a class="link" href="./contacto.html">Contacto</a></li>
+        </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

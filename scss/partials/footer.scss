@@ -1,0 +1,27 @@
+.footer{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+
+    .logo-footer{
+        padding-top: 2.2rem;
+        padding-left: 1rem;
+        width: 13rem;
+    }
+    .menu-footer{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+        margin: 0;
+
+        .list-item{
+            padding-inline: 1rem;
+            
+            a{
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}

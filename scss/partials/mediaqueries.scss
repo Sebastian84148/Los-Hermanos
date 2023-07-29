@@ -1,0 +1,27 @@
+@media(max-width:767px){
+    .header div{
+      justify-content: start;
+    }
+}
+@media (max-width: 780px){
+    .con-main{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 850px){
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    .logo-footer{
+        padding-bottom: 2.2rem;
+      }
+    .menu-footer{
+        flex-direction: column;
+        align-items: end;
+        gap: 0.3rem;
+        padding-top: 1rem;
+    }
+}

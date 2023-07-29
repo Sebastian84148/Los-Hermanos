@@ -1,0 +1,45 @@
+.con-main{
+    font-family: 'Oswald', 
+    sans-serif;
+    background-color: rgb(26, 139, 143);
+    display: flex;
+    justify-content: space-evenly;
+    padding-block: 4.6rem;
+
+    .con-section1{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-size: 3rem;
+        }
+        i{
+            margin-block: 0.5rem
+        }
+    }
+    .con-section2{
+        h1{
+            font-size: 2rem;
+            padding-top: 1rem;
+        }
+        input{
+            font-size: 1.1rem;
+        }
+        .form1{
+            margin-top: 0.4rem;
+            height: 3rem;
+            width: 15rem;
+        }
+        .textarea{
+            height: 8rem;
+        }
+        .form2{
+            padding: 0.8rem;
+            background-color: #545454;
+            border: 1px solid;
+        }
+    }
+}
