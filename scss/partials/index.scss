@@ -1,0 +1,28 @@
+.in-main{
+    padding-bottom: 2rem;
+    h1{
+        padding-block: 1rem;
+    }
+    .in-section{
+        h2{
+            margin-block: 1rem;
+        }
+        .in-div{
+            display: grid;
+            gap: 1.5rem;
+            padding-block: 1.5rem;
+            background-color: black;
+            border: 3px solid yellow;
+            border-radius: 15px;
+            
+            .img-1{
+                height: 100%;
+                border: 3px solid yellow;
+            }
+            .img-2{
+                height: 100%;
+                border: 3px solid yellow;
+            }
+        }
+    }
+}
