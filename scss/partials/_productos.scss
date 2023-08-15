@@ -1,13 +1,32 @@
 .pro-main{
-    background-color: rgb(26, 139, 143);
     padding-bottom: 2rem;
-    h1{
-        padding-block: 1rem;
-    }
-    .pro-div{
-        padding: 0.5rem;
-        background-color: black;
-        color: yellow;
-        margin-bottom: 1rem;
+
+    .pro-content{
+        margin-inline: 0.8rem;
+        display: grid;
+        gap: 1rem;
+        
+        h1{
+            padding-top: 1rem;
+        }
+        .pro-section{
+
+            img{
+                border-radius: 15px 15px 0 0;
+            }
+            @for $i from 1 through 3 {
+                .pro-div-#{$i} {
+                    padding: 0.5rem;
+                    background-color: $colorPrincipal;
+                    color: $colorTerciario;
+                    border-radius: 0 0 15px 15px;
+                }
+            }
+            p{
+                span{
+                    color: white;
+                }
+            }
+        }
     }
 }

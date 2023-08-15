@@ -1,42 +1,54 @@
 .con-main{
-    font-family: 'Oswald', 
-    sans-serif;
-    background-color: rgb(26, 139, 143);
-    display: flex;
-    justify-content: space-evenly;
     padding-block: 4.6rem;
 
-    .con-section1{
-        font-size: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .con-content{
+        @include flex(space-evenly, center);
+        
+        -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	    animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 
-        i{
-            margin-block: 0.5rem
+        .con-section-1{
+            @include flex(center, center);
+            font-size: 1.5rem;
+            flex-direction: column;
+    
+            i{
+                transition: .25s;
+                margin-block: 0.5rem;
+
+                &:hover{
+                    color: $colorTerciario ;
+                }
+            }
         }
-    }
-    .con-section2{
-        h2{
-            font-size: 2rem;
-            padding-top: 1rem;
-        }
-        input{
-            font-size: 1.1rem;
-        }
-        .form1{
-            margin-top: 0.4rem;
-            height: 3rem;
-            width: 15rem;
-        }
-        .textarea{
-            height: 8rem;
-        }
-        .form2{
-            padding: 0.8rem;
-            background-color: #545454;
-            border: 1px solid;
+        .con-section-2{
+            h2{
+                font-size: 2rem;
+                padding-top: 1rem;
+            }
+            form{
+                input{
+                    font-size: 1.1rem;
+                }
+                .form1{
+                    margin-top: 0.4rem;
+                    height: 3rem;
+                    width: 15rem;
+                }
+                .textarea{
+                    height: 8rem;
+                }
+                .form2{
+                    padding: 0.8rem;
+                    background-color: #545454;
+                    border: 1px solid;
+
+                    &:hover{
+                        background-color: $colorPrincipal;
+                        color: $colorTerciario;
+                    }
+                }
+            }
         }
     }
 }

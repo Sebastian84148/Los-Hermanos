@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Oswald:wght@300;700&display=swap');
+
+*, p, h1 ,h2 ,h3, ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuentePrincipal;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.2rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.2rem;
+}
+main{
+    background-color: $colorSecundario;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: $colorTerciario;
+}
