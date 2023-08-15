@@ -56,25 +56,23 @@
       <section class="con-section-2">
         <h2>Consulta</h2>
         <form>
-          <div>
-            <input class="form1" type="text" placeholder="Nombre" required>
+          <div class="mb-3">
+            <input class="form-1 form-control" type="text" placeholder="Nombre" aria-label="Nombre">
           </div>
-          <div>
-            <input class="form1" type="email" placeholder="Email" required>
+          <div class="mb-3">
+            <input type="email" class="form-1 form-control" id="exampleFormControlInput1" placeholder="Email">
           </div>
-          <div>
-            <select class="form1">
-              <option value="Electroventiladores">Electroventiladores</option>
-              <option value="Levanta Cristales">Levanta Cristales</option>
-              <option value="Calefactores y Repuestos">Calefactores y Repuestos</option>
-              <option value="Limpiaparabrisas">Limpiaparabrisas</option>
-            </select>
+          <select class="form-1 form-select" aria-label="Default select example">
+            <option selected>Electroventiladores</option>
+            <option value="Levanta Cristales">Levanta Cristales</option>
+            <option value="Calefactores y Repuestos">Calefactores y Repuestos</option>
+            <option value="Limpiaparabrisas">Limpiaparabrisas</option>
+          </select>
+          <div class="mb-3">
+            <textarea class="form-1 form-2 form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
           </div>
-          <div>
-            <textarea class="form1 textarea" placeholder="Mensaje" required></textarea>
-          </div>
-          <input class="form2" type="submit" value="Enviar">
-          <input class="form2" type="reset" value="Restablecer">
+          <input class="botones" type="submit" value="Enviar">
+          <input class="botones" type="reset" value="Restablecer">
         </form>
       </section>
     </div>

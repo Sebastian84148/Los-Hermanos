@@ -266,25 +266,28 @@ a {
 }
 .con-main .con-content .con-section-2 h2 {
   font-size: 2rem;
-  padding-top: 1rem;
+  padding-block: 1rem;
 }
-.con-main .con-content .con-section-2 form input {
+.con-main .con-content .con-section-2 form div .form-2 {
+  margin-top: 1rem;
+}
+.con-main .con-content .con-section-2 form .form-1 {
   font-size: 1.1rem;
-}
-.con-main .con-content .con-section-2 form .form1 {
-  margin-top: 0.4rem;
-  height: 3rem;
+  border-radius: 0;
+  transition: 0.2s;
   width: 15rem;
 }
-.con-main .con-content .con-section-2 form .textarea {
-  height: 8rem;
+.con-main .con-content .con-section-2 form .form-1:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
 }
-.con-main .con-content .con-section-2 form .form2 {
+.con-main .con-content .con-section-2 form .botones {
   padding: 0.8rem;
   background-color: #545454;
   border: 1px solid;
+  transition: 0.3s;
 }
-.con-main .con-content .con-section-2 form .form2:hover {
+.con-main .con-content .con-section-2 form .botones:hover {
   background-color: black;
   color: rgb(255, 255, 90);
 }
@@ -306,6 +309,9 @@ a {
 }
 .footer .menu-footer .list-item {
   padding-inline: 1rem;
+}
+.footer .menu-footer .list-item a {
+  transition: 0.3s;
 }
 .footer .menu-footer .list-item a:hover {
   color: white;

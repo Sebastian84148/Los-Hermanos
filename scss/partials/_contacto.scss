@@ -24,24 +24,30 @@
         .con-section-2{
             h2{
                 font-size: 2rem;
-                padding-top: 1rem;
+                padding-block: 1rem;
             }
             form{
-                input{
+                div{
+                    .form-2{
+                        margin-top: 1rem;
+                    }
+                }
+                .form-1{
                     font-size: 1.1rem;
-                }
-                .form1{
-                    margin-top: 0.4rem;
-                    height: 3rem;
+                    border-radius: 0;
+                    transition: .2s;
                     width: 15rem;
-                }
-                .textarea{
-                    height: 8rem;
-                }
-                .form2{
+
+                    &:hover{
+                        transform: scale(1.05);
+                        border: 1px solid $colorPrincipal;
+                    }
+                }     
+                .botones{
                     padding: 0.8rem;
                     background-color: #545454;
                     border: 1px solid;
+                    transition: .3s;
 
                     &:hover{
                         background-color: $colorPrincipal;
