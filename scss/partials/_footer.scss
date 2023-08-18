@@ -1,13 +1,15 @@
 .footer{
     background-color: $colorPrincipal ;
+     @include flex(center, center);
+     flex-direction: column;
+     padding-top: 1rem;
+     gap: 0.5rem;
 
     .logo-footer{
-        padding-top: 2.2rem;
-        padding-left: 1rem;
         width: 11rem;
     }
     .menu-footer{
-        @include flex(center, center);
+         @include flex(center, center);
         list-style-type: none;
         padding-bottom: 1rem;
 

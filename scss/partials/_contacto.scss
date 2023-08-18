@@ -27,22 +27,24 @@
                 padding-block: 1rem;
             }
             form{
-                div{
-                    .form-2{
-                        margin-top: 1rem;
-                    }
-                }
                 .form-1{
-                    font-size: 1.1rem;
-                    border-radius: 0;
-                    transition: .2s;
                     width: 15rem;
+                    font-size: 1.2rem;
+                    border-radius: 0;
+                    transition-property: transform, border;
+                    transition-duration: .2s, 0s;
+                    border: 1px solid transparent;
 
                     &:hover{
                         transform: scale(1.05);
                         border: 1px solid $colorPrincipal;
                     }
-                }     
+                }
+                div{
+                    .form-2{
+                        margin-top: 1rem;
+                    }
+                }  
                 .botones{
                     padding: 0.8rem;
                     background-color: #545454;

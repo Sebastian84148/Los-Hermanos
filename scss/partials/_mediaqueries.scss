@@ -27,6 +27,7 @@
                 grid-template-rows: 0.5fr 0.5fr;
         
                 img{
+                    height: auto;
                     border-radius: 15px 15px 0 0;
                 }
                 div{
@@ -44,9 +45,23 @@
                     border-radius: 0 0 15px 15px;
                 }
                 iframe{
+                    min-height: 25rem;
                     grid-row: 1/2;
                     border-radius: 15px 15px 0 0;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .ser-main{
+        .ser-content{
+            .ser-section-1{
+                grid-template-columns: 1.5fr 2fr;
+            }
+            .ser-section-2{
+                grid-template-columns: 2fr 1.5fr;
             }
         }
     }
@@ -61,7 +76,7 @@
                 @include flex(center, center);
 
                 img{
-                    width: 50%;
+                    min-width: 50%;
                 }
             }
             .nos-jefes{
@@ -97,13 +112,14 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 18rem 0.5fr;
-            transition-property: transform, border, border-radius;
-            transition-duration: .4s, 0s, 0s;
+            transition-property: transform, border;
+            transition-duration: .4s, 0s;
+            border: 2px solid transparent;
+            border-radius: 18px;
 
             &:hover{
                 transform: scale(1.05);
                 border: 2px solid $colorTerciario;
-                border-radius: 18px;
             }
             .pro-img {
                 height: 100%;
@@ -131,15 +147,15 @@
 @media (max-width: 850px){
     .footer{
         @include flex(space-between, center);
-
+        flex-direction: row;
+        
         .logo-footer{
-            padding-bottom: 2.2rem;
+            padding-left: 1rem;
         }
         .menu-footer{
             flex-direction: column;
             align-items: end;
             gap: 0.3rem;
-            padding-top: 1rem;
         }
     }
 }

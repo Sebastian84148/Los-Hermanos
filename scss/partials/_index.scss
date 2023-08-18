@@ -31,6 +31,7 @@
                 
                 .img-1{
                     height: 100%;
+                    border: 2px solid transparent;
 
                     &:hover{
                         border: 2px solid $colorTerciario;
@@ -38,6 +39,7 @@
                 }
                 .img-2{
                     height: 100%;
+                    border: 2px solid transparent;
 
                     &:hover{
                         border: 2px solid $colorTerciario;

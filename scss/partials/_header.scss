@@ -3,6 +3,7 @@
 
     div{
         @include flex(end, center);
+
         .logo{
             width: 9rem;
         }

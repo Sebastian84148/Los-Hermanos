@@ -2,9 +2,12 @@
     padding-bottom: 2rem;
 
     .pro-content{
-        margin-inline: 0.8rem;
+        margin-inline: 3rem;
         display: grid;
         gap: 1rem;
+        
+        -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	    animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
         
         h1{
             padding-top: 1rem;
